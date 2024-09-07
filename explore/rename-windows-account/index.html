@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="微软早已禁止了在OOBE阶段使用本地账户创建用户，而必须使用微软账户来创建在线用户而用户名只会取邮箱的前五个字符比如我使用&#75;&#97;&#103;&#x75;&#x72;&#x61;&#75;&#x6f;&#105;&#x73;&#104;&#x69;&#x40;&#111;&#117;&#x74;&#108;&#111;&#x6f;&#x6b;&#x2e;&#x63;&#111;&amp;#10">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于Windows用户名重命名">
+<meta property="og:url" content="http://kagurakoishi.github.io/explore/rename-windows-account/index.html">
+<meta property="og:site_name" content="神楽こいしのブログ">
+<meta property="og:description" content="微软早已禁止了在OOBE阶段使用本地账户创建用户，而必须使用微软账户来创建在线用户而用户名只会取邮箱的前五个字符比如我使用&#75;&#97;&#103;&#x75;&#x72;&#x61;&#75;&#x6f;&#105;&#x73;&#104;&#x69;&#x40;&#111;&#117;&#x74;&#108;&#111;&#x6f;&#x6b;&#x2e;&#x63;&#111;&amp;#10">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-09-07T10:12:26.000Z">
+<meta property="article:modified_time" content="2024-09-07T10:36:47.509Z">
+<meta property="article:author" content="KaguraKoishi">
+<meta property="article:tag" content="Windows">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>关于Windows用户名重命名</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">主页</a></li><!--
+     --><!--
+       --><li><a href="/categories/life/">生活</a></li><!--
+     --><!--
+       --><li><a href="/categories/explore/">折腾</a></li><!--
+     --><!--
+       --><li><a href="/about/">关于</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="https://vivy.kgr514.com/">主站</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/life/hrt-records/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://kagurakoishi.github.io/explore/rename-windows-account/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://kagurakoishi.github.io/explore/rename-windows-account/&text=关于Windows用户名重命名"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://kagurakoishi.github.io/explore/rename-windows-account/&title=关于Windows用户名重命名"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://kagurakoishi.github.io/explore/rename-windows-account/&is_video=false&description=关于Windows用户名重命名"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=关于Windows用户名重命名&body=Check out this article: http://kagurakoishi.github.io/explore/rename-windows-account/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://kagurakoishi.github.io/explore/rename-windows-account/&title=关于Windows用户名重命名"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://kagurakoishi.github.io/explore/rename-windows-account/&title=关于Windows用户名重命名"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://kagurakoishi.github.io/explore/rename-windows-account/&title=关于Windows用户名重命名"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://kagurakoishi.github.io/explore/rename-windows-account/&title=关于Windows用户名重命名"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://kagurakoishi.github.io/explore/rename-windows-account/&name=关于Windows用户名重命名&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://kagurakoishi.github.io/explore/rename-windows-account/&t=关于Windows用户名重命名"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        关于Windows用户名重命名
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">KaguraKoishi</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2024-09-07T10:12:26.000Z" class="dt-published" itemprop="datePublished">2024-09-07</time>
+        
+        (Updated: <time datetime="2024-09-07T10:36:47.509Z" class="dt-updated" itemprop="dateModified">2024-09-07</time>)
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/explore/">explore</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/Windows/" rel="tag">Windows</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <p>微软早已禁止了在OOBE阶段使用本地账户创建用户，而必须使用微软账户来创建在线用户<br>而用户名只会取邮箱的前五个字符<br>比如我使用<a href="mailto:&#75;&#97;&#103;&#x75;&#x72;&#x61;&#75;&#x6f;&#105;&#x73;&#104;&#x69;&#x40;&#111;&#117;&#x74;&#108;&#111;&#x6f;&#x6b;&#x2e;&#x63;&#111;&#109;">&#75;&#97;&#103;&#x75;&#x72;&#x61;&#75;&#x6f;&#105;&#x73;&#104;&#x69;&#x40;&#111;&#117;&#x74;&#108;&#111;&#x6f;&#x6b;&#x2e;&#x63;&#111;&#109;</a>创建用户，我的用户名就会是kagur<br><strong>这能忍？？？</strong></p>
+<p>此外，有些电脑小白可能在早期版本的windows安装过程中使用了中文用户名，这势必会造成一些软件无法使用，到最后还得重命名<br>对我来说，除了取微软账户的前五个字符作为用户名让我极度不爽无法忍受以外，也还有一个重要原因<br>我喜欢保持我所有设备(很多是Linux系统)使用相同的用户名，<strong>从而可以在ssh的时候省去输入用户名的步骤</strong></p>
+<p>那么，要怎么重命名呢，以我的经验来说，网上无非是让你去改注册表什么的，直接说结论：99%会失败，根本没用<br>要我说，直接注册一个新的本地账户，改好名字，然后再转成在线账户，这个过程中会保留你所设置的本地账户用户名<br>接下来修改原本的用户文件夹<code>C:/Users/Username</code>的权限，再把里面的文件全部拷到新的用户文件夹里就OK了，基本上绝大部分软件的数据都能顺利迁移过来，变相地也就完成了用户名的重命名<br>简单，高效，安全。</p>
+<p>什么，怎么改权限？<br>右键-属性-安全-高级，看着改吧，把所有者改成新账户，或者给新账户完全控制的权限，或者我全都要</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">主页</a></li>
+        
+          <li><a href="/categories/life/">生活</a></li>
+        
+          <li><a href="/categories/explore/">折腾</a></li>
+        
+          <li><a href="/about/">关于</a></li>
+        
+          <li><a target="_blank" rel="noopener" href="https://vivy.kgr514.com/">主站</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://kagurakoishi.github.io/explore/rename-windows-account/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://kagurakoishi.github.io/explore/rename-windows-account/&text=关于Windows用户名重命名"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://kagurakoishi.github.io/explore/rename-windows-account/&title=关于Windows用户名重命名"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://kagurakoishi.github.io/explore/rename-windows-account/&is_video=false&description=关于Windows用户名重命名"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=关于Windows用户名重命名&body=Check out this article: http://kagurakoishi.github.io/explore/rename-windows-account/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://kagurakoishi.github.io/explore/rename-windows-account/&title=关于Windows用户名重命名"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://kagurakoishi.github.io/explore/rename-windows-account/&title=关于Windows用户名重命名"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://kagurakoishi.github.io/explore/rename-windows-account/&title=关于Windows用户名重命名"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://kagurakoishi.github.io/explore/rename-windows-account/&title=关于Windows用户名重命名"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://kagurakoishi.github.io/explore/rename-windows-account/&name=关于Windows用户名重命名&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://kagurakoishi.github.io/explore/rename-windows-account/&t=关于Windows用户名重命名"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2024
+    KaguraKoishi
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">主页</a></li><!--
+     --><!--
+       --><li><a href="/categories/life/">生活</a></li><!--
+     --><!--
+       --><li><a href="/categories/explore/">折腾</a></li><!--
+     --><!--
+       --><li><a href="/about/">关于</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="https://vivy.kgr514.com/">主站</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
