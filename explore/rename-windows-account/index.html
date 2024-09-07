@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="微软早已禁止了在OOBE阶段使用本地账户创建用户，而必须使用微软账户来创建在线用户而用户名只会取邮箱的前五个字符比如我使用&#75;&#97;&#103;&#x75;&#x72;&#x61;&#75;&#x6f;&#105;&#x73;&#104;&#x69;&#x40;&#111;&#117;&#x74;&#108;&#111;&#x6f;&#x6b;&#x2e;&#x63;&#111;&amp;#10">
+    <meta name="description" content="微软早已禁止了在OOBE阶段使用本地账户创建用户，而必须使用微软账户来创建在线用户而用户名只会取邮箱的前五个字符比如我使用&#x4b;&#97;&#x67;&#117;&#114;&#97;&#x4b;&#x6f;&#x69;&#115;&#x68;&#x69;&#64;&#x6f;&#117;&#x74;&#x6c;&#111;&#111;&#107;&#x2e;&#99;&#x6f;&amp;#109">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于Windows用户名重命名">
 <meta property="og:url" content="http://kagurakoishi.github.io/explore/rename-windows-account/index.html">
 <meta property="og:site_name" content="神楽こいしのブログ">
-<meta property="og:description" content="微软早已禁止了在OOBE阶段使用本地账户创建用户，而必须使用微软账户来创建在线用户而用户名只会取邮箱的前五个字符比如我使用&#75;&#97;&#103;&#x75;&#x72;&#x61;&#75;&#x6f;&#105;&#x73;&#104;&#x69;&#x40;&#111;&#117;&#x74;&#108;&#111;&#x6f;&#x6b;&#x2e;&#x63;&#111;&amp;#10">
+<meta property="og:description" content="微软早已禁止了在OOBE阶段使用本地账户创建用户，而必须使用微软账户来创建在线用户而用户名只会取邮箱的前五个字符比如我使用&#x4b;&#97;&#x67;&#117;&#114;&#97;&#x4b;&#x6f;&#x69;&#115;&#x68;&#x69;&#64;&#x6f;&#117;&#x74;&#x6c;&#111;&#111;&#107;&#x2e;&#99;&#x6f;&amp;#109">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-09-07T10:12:26.000Z">
 <meta property="article:modified_time" content="2024-09-07T10:36:47.509Z">
@@ -163,7 +163,7 @@
   
 
   <div class="content e-content" itemprop="articleBody">
-    <p>微软早已禁止了在OOBE阶段使用本地账户创建用户，而必须使用微软账户来创建在线用户<br>而用户名只会取邮箱的前五个字符<br>比如我使用<a href="mailto:&#75;&#97;&#103;&#x75;&#x72;&#x61;&#75;&#x6f;&#105;&#x73;&#104;&#x69;&#x40;&#111;&#117;&#x74;&#108;&#111;&#x6f;&#x6b;&#x2e;&#x63;&#111;&#109;">&#75;&#97;&#103;&#x75;&#x72;&#x61;&#75;&#x6f;&#105;&#x73;&#104;&#x69;&#x40;&#111;&#117;&#x74;&#108;&#111;&#x6f;&#x6b;&#x2e;&#x63;&#111;&#109;</a>创建用户，我的用户名就会是kagur<br><strong>这能忍？？？</strong></p>
+    <p>微软早已禁止了在OOBE阶段使用本地账户创建用户，而必须使用微软账户来创建在线用户<br>而用户名只会取邮箱的前五个字符<br>比如我使用<a href="mailto:&#x4b;&#97;&#x67;&#117;&#114;&#97;&#x4b;&#x6f;&#x69;&#115;&#x68;&#x69;&#64;&#x6f;&#117;&#x74;&#x6c;&#111;&#111;&#107;&#x2e;&#99;&#x6f;&#109;">&#x4b;&#97;&#x67;&#117;&#114;&#97;&#x4b;&#x6f;&#x69;&#115;&#x68;&#x69;&#64;&#x6f;&#117;&#x74;&#x6c;&#111;&#111;&#107;&#x2e;&#99;&#x6f;&#109;</a>创建用户，我的用户名就会是kagur<br><strong>这能忍？？？</strong></p>
 <p>此外，有些电脑小白可能在早期版本的windows安装过程中使用了中文用户名，这势必会造成一些软件无法使用，到最后还得重命名<br>对我来说，除了取微软账户的前五个字符作为用户名让我极度不爽无法忍受以外，也还有一个重要原因<br>我喜欢保持我所有设备(很多是Linux系统)使用相同的用户名，<strong>从而可以在ssh的时候省去输入用户名的步骤</strong></p>
 <p>那么，要怎么重命名呢，以我的经验来说，网上无非是让你去改注册表什么的，直接说结论：99%会失败，根本没用<br>要我说，直接注册一个新的本地账户，改好名字，然后再转成在线账户，这个过程中会保留你所设置的本地账户用户名<br>接下来修改原本的用户文件夹<code>C:/Users/Username</code>的权限，再把里面的文件全部拷到新的用户文件夹里就OK了，基本上绝大部分软件的数据都能顺利迁移过来，变相地也就完成了用户名的重命名<br>简单，高效，安全。</p>
 <p>什么，怎么改权限？<br>右键-属性-安全-高级，看着改吧，把所有者改成新账户，或者给新账户完全控制的权限，或者我全都要</p>
@@ -255,13 +255,25 @@
     <!-- styles -->
 
 
-
-  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+ 
+  <link
+    rel="preload"
+    href="/lib/font-awesome/css/all.min.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+  <noscript
+    ><link
+      rel="stylesheet"
+      href="/lib/font-awesome/css/all.min.css"
+  /></noscript>
 
 
     <!-- jquery -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+  
+<script src="/lib/jquery/jquery.min.js"></script>
+
 
 
 
@@ -269,7 +281,9 @@
 <!-- clipboard -->
 
   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+    
+<script src="/lib/clipboard/clipboard.min.js"></script>
+
   
   <script type="text/javascript">
   $(function() {
